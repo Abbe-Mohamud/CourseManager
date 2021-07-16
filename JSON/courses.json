@@ -1,1 +1,38 @@
-[ ]
+[ {
+  "id" : 1,
+  "courseName" : "Java",
+  "startDate" : "2021-09-01",
+  "weekDuration" : 25,
+  "students" : [ {
+    "id" : 3,
+    "name" : "Marcus Larsson",
+    "email" : "ml@gmail.com",
+    "address" : "Hagavägen 55"
+  }, {
+    "id" : 1,
+    "name" : "Abbe Mohamud",
+    "email" : "Abc@gmail.com",
+    "address" : "Sveavägen  152"
+  } ]
+}, {
+  "id" : 2,
+  "courseName" : "C Embedded",
+  "startDate" : "2021-11-01",
+  "weekDuration" : 65,
+  "students" : [ {
+    "id" : 2,
+    "name" : "Simon Ericsson ",
+    "email" : "se@hotmail.com",
+    "address" : "Valhallavägen 23"
+  }, {
+    "id" : 4,
+    "name" : "Adnan Javan",
+    "email" : "aj@gmail.com",
+    "address" : "Himmelbacken 12"
+  }, {
+    "id" : 1,
+    "name" : "Abbe Mohamud",
+    "email" : "Abc@gmail.com",
+    "address" : "Sveavägen  152"
+  } ]
+} ]

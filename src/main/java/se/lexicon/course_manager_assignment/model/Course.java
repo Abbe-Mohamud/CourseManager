@@ -4,6 +4,7 @@ import se.lexicon.course_manager_assignment.data.sequencers.CourseSequencer;
 
 import java.time.LocalDate;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Objects;
 
 public class Course {
@@ -13,11 +14,9 @@ public class Course {
     private int weekDuration;
     private Collection<Student> students;
 
-    public Course() {
-        int id = CourseSequencer.nextCourseId();;
-    }
+    public Course() { }
 
-    public Course(String courseName, LocalDate startDate, int weekDuration, Collection<Student> students) {
+    public Course(int id, String courseName, LocalDate startDate, int weekDuration, Collection<Student> students) {
         this.id = id;
         this.courseName = courseName;
         this.startDate = startDate;
@@ -25,10 +24,12 @@ public class Course {
         this.students = students;
     }
 
-    public Course(String courseName, LocalDate startDate, int weekDuration) {
+    public Course(int id, String courseName, LocalDate startDate, int weekDuration) {
+        this.id = id;
         this.courseName = courseName;
         this.startDate = startDate;
         this.weekDuration = weekDuration;
+        this.students = new HashSet<>();
     }
 
     public int getId() {

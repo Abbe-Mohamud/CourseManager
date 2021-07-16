@@ -1,1 +1,21 @@
-[ ]
+[ {
+  "id" : 3,
+  "name" : "Marcus Larsson",
+  "email" : "ml@gmail.com",
+  "address" : "Hagavägen 55"
+}, {
+  "id" : 2,
+  "name" : "Simon Ericsson ",
+  "email" : "se@hotmail.com",
+  "address" : "Valhallavägen 23"
+}, {
+  "id" : 4,
+  "name" : "Adnan Javan",
+  "email" : "aj@gmail.com",
+  "address" : "Himmelbacken 12"
+}, {
+  "id" : 1,
+  "name" : "Abbe Mohamud",
+  "email" : "Abc@gmail.com",
+  "address" : "Sveavägen  152"
+} ]

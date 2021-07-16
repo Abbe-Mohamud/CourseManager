@@ -22,7 +22,7 @@ public class CourseCollectionRepository implements CourseDao{
 
     @Override
     public Course createCourse(String courseName, LocalDate startDate, int weekDuration) {
-        Course course = new Course(courseName,startDate,weekDuration);
+        Course course = new Course(CourseSequencer.nextCourseId(),courseName,startDate,weekDuration);
         courses.add(course);
         return course;
 
@@ -83,14 +83,15 @@ public class CourseCollectionRepository implements CourseDao{
     public Collection<Course> findByStudentId(int studentId) {
         Collection<Course> courseList = new HashSet<>();
         for (Course course : courses) {
-            Collection<Student>  students = new HashSet<>(); //studList
-            for (Student student : students) {
+            //Collection<Student>  students = new HashSet<>(); //studList
+            for (Student student : course.getStudents()) {
                 if (studentId == student.getId()) {
                     courseList.add(course);
                 }
-                return courseList;
+
             }
-        } return null;
+        }
+        return courseList;
     }
 
     @Override
